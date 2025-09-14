@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Interactivo</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="sidebar">
+        <h2>CREATIVE TIM</h2>
+        <ul>
+            <li><a href="#" data-section="dashboard"><i class="fa fa-home"></i> Dashboard</a></li>
+            <li><a href="#" data-section="profile"><i class="fa fa-user"></i> User Profile</a></li>
+            <li><a href="#" data-section="table"><i class="fa fa-table"></i> Table List</a></li>
+            <li><a href="#" data-section="notifications"><i class="fa fa-bell"></i> Notifications</a></li>
+            <li><a href="#" data-section="settings"><i class="fa fa-cog"></i> Settings</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <input type="text" placeholder="Buscar...">
+            <div class="icons">
+                <i class="fa fa-bell"></i>
+                <i class="fa fa-envelope"></i>
+                <i class="fa fa-user-circle"></i>
+            </div>
+        </header>
+
+        <section class="cards">
+            <div class="card"><i class="fa fa-hdd"></i>
+                <h3>49/50 GB</h3>
+                <p>Used Space</p>
+            </div>
+            <div class="card"><i class="fa fa-dollar-sign"></i>
+                <h3>$34,245</h3>
+                <p>Revenue</p>
+            </div>
+            <div class="card"><i class="fa fa-bug"></i>
+                <h3>75</h3>
+                <p>Fixed Issues</p>
+            </div>
+            <div class="card"><i class="fa fa-twitter"></i>
+                <h3>+245</h3>
+                <p>Followers</p>
+            </div>
+        </section>
+
+        <section class="charts">
+            <div class="chart-container">
+                <h4>Daily Sales</h4>
+                <canvas id="salesChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <h4>Email Subscriptions</h4>
+                <canvas id="emailChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <h4>Completed Tasks</h4>
+                <canvas id="tasksChart"></canvas>
+            </div>
+        </section>
+    </div>
+
+    <script src="scripts/dashboard_v4.js"></script>
+</body>
+
+</html>
